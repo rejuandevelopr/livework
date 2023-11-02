@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-color: #F2F2F2;
+    --second-bg-color: #0A3855;
+    --text-color: #000;
+    --second-text-color: #fff;
+}
+body{
+    background-color: var(--bg-color);
+}
+
+.container-main{
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 10px 15px 10px;
+}
+
+
+#home .container-main .home-content h1{
+    text-align: center;
+    background-color: var(--second-bg-color);
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    color: var(--second-text-color);
+    font-weight: lighter;
+}
+img{
+    width: 90px;
+    max-width: 100%;
+    border-radius: 6px;
+}
+.plan-content{
+    text-align: center;
+}
+.plan-content a p{
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Grid Container One */
+.grid-container-one{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 40px;
+    margin-top: 30px;
+}
+
+.care-plan{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+
+.goals{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.shift-notes{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.medical{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.calender{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.edit-client{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.new-user{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.edit-user{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.my-profile{
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+.log-out{
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+
+@media screen and (max-width:576px) {
+    img{
+        width: 75px;
+        max-width: 100%;
+    }
+}
